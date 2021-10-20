@@ -1,0 +1,430 @@
+/* start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    padding: 25px 20px;
+    margin: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 748px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 972px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1180px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1380px;
+    }
+}
+/* end global rules */
+/* start header section */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+.header .container .logo {
+    width: 100px;
+    height: -webkit-fill-available;
+}
+.header .container button {
+    border-radius: 5rem;
+    border: 1px solid #fe52c0;
+    background-color: white;
+    color: #fe52c0;
+    width: 95px;
+    height: 22px;
+    font-size: 11px;
+    font-weight: 600;
+    box-shadow: 0 0 8px -5px black;
+}
+@media (min-width: 769px) {
+    .header .container {
+        padding: 60px 60px 25px;
+    }
+    .header .container .logo {
+        width: unset;
+    }
+    .header .container button {
+        width: 220px;
+        height: 50px;
+        font-size: 17px;
+    }
+}
+/* end header section */
+/* start landing section */
+.landing .container {
+    text-align: center;
+    font-weight: 600;
+}
+.landing .container .text {
+    line-height: 1.5;
+}
+.landing .container .text h2 {
+    margin-top: 40px;
+}
+.landing .container .text p {
+    margin: 30px 0;
+    font-weight: 200;
+}
+.landing .container button,
+.cards .card button {
+    border-radius: 5rem;
+    border: none;
+    background-color: #fe52c0;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    box-shadow: 0px 7px 20px -14px black;
+}
+.landing .container .mockups {
+    width: 100%;
+    padding-top: 60px;
+}
+.landing .lan-numbers .num {
+    margin-top: 150px;
+}
+.landing .lan-numbers .num {
+    margin-top: 150px;
+}
+.landing .lan-numbers .num:last-child {
+    margin-top: 110px;
+}
+.landing .lan-numbers img {
+    width: 30px;
+    position: relative;
+    right: 75px;
+}
+.landing .lan-numbers h2 {
+    font-size: 65px;
+}
+.landing .lan-numbers p {
+    margin: 15px 0;
+}
+@media (min-width: 769px) {
+    .landing .container .top-lan {
+        margin-top: 25vh;
+    }
+    .landing .container .top-lan p {
+        padding: 0px 340px;
+    }
+    .landing .container .text {
+        padding-right: 60px;
+        margin-bottom: 120px;
+    }
+    .landing .container .text h2 {
+        font-size: 50px;
+    }
+    .landing .container .text p {
+        font-size: 20px;
+    }
+    .landing .container button {
+        width: 415px;
+        height: 80px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .landing .container .mockups {
+        width: 80%;
+        padding-top: 30px;
+    }
+    .landing .lan-numbers {
+        margin: 200px 0;
+    }
+    .landing .lan-numbers {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .landing .lan-numbers .num {
+        margin: auto;
+    }
+    .landing .lan-numbers .num:last-child {
+        margin-top: unset;
+    }
+}
+/* end landing section */
+/* start crads section */
+.cards .container {
+    margin: 0 0 -30px;
+    padding: 25px 0;
+    width: 100%;
+}
+.cards .card {
+    text-align: center;
+    margin: 0px auto;
+    padding: 40px 20px;
+}
+.cards .container .card1, .card3{
+    background-color: #f6fbff;
+}
+.cards .container .bg-top {
+    position: relative;
+    top: 15px;
+}
+.cards .container .bg-bottom {
+    position: relative;
+    bottom: 15px;
+}
+.cards .card .text p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #777;
+}
+.cards .card img {
+    width: 100%;
+    margin: 25px auto 60px;
+}
+.cards .card:last-child {
+    padding: 80px 20px;
+    height: 70vh
+}
+.cards .card:last-child h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.cards .card button {
+    width: 190px;
+    height: 35px;
+    font-size: 10px;
+    font-weight: 500;
+}
+@media (max-width: 375.5px) {
+    .cards .container .bg-top-d {
+        display: none;
+    }
+    .cards .container .bg-bottom-d {
+        display: none;
+    }
+}
+@media (min-width: 376px) {
+    .cards .container .bg-top {
+        display: none;
+    }
+    .cards .container .bg-bottom {
+        display: none;
+    }
+    .cards .container .bg-top-d {
+        display: block;
+        position: relative;
+        top: 1px;
+    }
+    .cards .container .bg-bottom-d {
+        display: block;
+        position: relative;
+        bottom: 1px;
+    }
+}
+@media (min-width: 769px) {
+    .cards .container .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: unset;
+    }
+    .cards .card {
+        padding: 100px 20px;
+    }
+    .cards .container .card:not( :nth-child(2) ) {
+        flex-direction: row-reverse;
+    }
+    .cards .container .card img {
+        width: 625px;
+        padding: 40px 100px;
+        margin: auto;
+    }
+    .cards .container .card .text {
+        padding-left: 180px;
+        font-size: 26px;
+    }
+    .cards .container .card:not( :nth-child(2), :nth-child(4) ) .text {
+        padding-left: 90px;
+        padding-right: 100px;
+    }
+    .cards .container .card p {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .cards .card:last-child {
+        top: 140px;
+    }
+    .cards .card:last-child .text {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cards .card:last-child h3 {
+        font-size: 37px;
+        margin-bottom: 35px;
+    }
+    .cards .card button {
+        width: 365px;
+        height: 65px;
+        font-size: 17px;
+    }
+}
+/* end cards section */
+/* start footer section */
+.footer {
+    background-color: #00252e;
+    color: white;
+}
+.footer .bg-footer {
+    background-color: white;
+}
+.footer .flogo {
+    width: 190px;
+    margin-bottom: 20px;
+    margin-left: -14px;
+}
+.footer .info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer .info .newsletter h3 {
+    margin-bottom: 20px;
+}
+.newsletter {
+    margin-bottom: 80px;
+}
+.newsletter p {
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+.newsletter input {
+    width: 100%;
+    height: 50px;
+    border-radius: 0.4rem;
+    margin-bottom: 15px;
+    border: none;
+    padding-left: 15px;
+}
+.newsletter .button {
+    display: flex;
+    justify-content: end;
+}
+.newsletter button {
+    border-radius: 0.3rem;
+    width: 165px;
+    height: 50px;
+    background-color: #fe52c0;
+    border: none;
+}
+.newsletter a {
+    color: white;
+    text-decoration: none;
+}
+.footer .info .f-logo-s p {
+    margin-bottom: 45px;
+    line-height: 1.4;
+}
+.footer .container .contact div:not(.contact div div) {
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer .container .contact div img {
+    padding-right: 20px;
+}
+.footer .container .contact div p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+.footer .contact .email input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+.footer .social .icons{
+    display: flex;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+.footer .social button {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.footer .social a {
+    color: white;
+}
+@media (max-width: 375.5px) {
+    .footer .bg-footer-d {
+        display: none;
+    }
+}
+@media (min-width: 376px) {
+    .footer .bg-footer {
+        display: none;
+    }
+    .footer .bg-footer-d {
+        display: block;
+        margin-top: 150px;
+        position: relative;
+        bottom: 150px;
+    }
+}
+@media (min-width: 1200px) {
+    .footer .container {
+        padding: 0 90px 25px;
+    }
+    .footer .info {
+        flex-direction: row-reverse;
+    }
+    .newsletter {
+        width: 375px;
+        margin-right: 200px;
+        position: relative;
+    }
+    .footer .info .newsletter h3 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .newsletter .sub-but {
+        display: flex;
+    }
+    .footer .info .f-logo-s p {
+        margin-bottom: 35px;
+    }
+    .footer .info .f-logo-s .flogo {
+        width: 275px;
+    }
+    .sub-but .button {
+        position: absolute;
+        right: -180px;
+    }
+    .u-info {
+        width: 350px;
+    }
+    .footer .social button {
+        font-size: 40px;
+    }
+    .footer .social .icons {
+        margin-top: 80px;
+    }
+}
+/* end footer section */
